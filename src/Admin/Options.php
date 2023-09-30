@@ -31,7 +31,7 @@ class Options
             ->add_option('select', [
                 'name' => 'version',
                 'label' => __('Version', 'just-recaptcha'),
-                'description' => __('Select the version of reCAPTCHA you want to use.', 'just-recaptcha'),
+                'description' => sprintf(__('Select the version of reCAPTCHA you want to use. <a href="%s" target="_blank">More information</a>.', 'just-recaptcha'), 'https://www.google.com/recaptcha/about/'),
                 'options' => [
                     '' => __('Choose a version', 'just-recaptcha'),
                     'v2' => 'V2',

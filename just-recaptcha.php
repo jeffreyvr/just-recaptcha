@@ -4,7 +4,7 @@
  *
  * @wordpress-plugin
  * Plugin name:         Just reCAPTCHA
- * Description:         Simply add a reCAPTCHA v2 to your WordPress registration form.
+ * Description:         Simply add a reCAPTCHA v2 or v3 to your WordPress registration form.
  * Version:             0.1.0
  * Requires at least:   6.0
  * Requires PHP:        8.0

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Just reCAPTCHA\n"
-"POT-Creation-Date: 2023-09-30 14:38+0200\n"
-"PO-Revision-Date: 2023-09-30 14:41+0200\n"
+"POT-Creation-Date: 2023-09-30 14:44+0200\n"
+"PO-Revision-Date: 2023-09-30 14:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -30,8 +30,13 @@ msgid "Version"
 msgstr "Versie"
 
 #: src/Admin/Options.php:34
-msgid "Select the version of reCAPTCHA you want to use."
-msgstr "Selecteer de versie van reCAPTCHA die u wilt gebruiken."
+#, php-format
+msgid ""
+"Select the version of reCAPTCHA you want to use. <a href=\"%s\" "
+"target=\"_blank\">More information</a>."
+msgstr ""
+"Selecteer de versie van reCAPTCHA die je wilt gebruiken. <a href=\"%s\" "
+"target=\"_blank\">Meer informatie</a>."
 
 #: src/Admin/Options.php:36
 msgid "Choose a version"
@@ -49,10 +54,6 @@ msgstr "Site geheime sleutel"
 msgid "<strong>Error</strong>: reCAPTCHA is not configured correctly."
 msgstr "<strong>Fout</strong>: reCAPTCHA is niet correct geconfigureerd."
 
-#: src/Implementations/V3/RegistrationForm.php:56
-msgid "<strong>Error</strong>: reCAPTCHA is not submitted."
-msgstr "<strong>Fout</strong>: reCAPTCHA is niet verzonden."
-
 #: src/Implementations/V2/RegistrationForm.php:45
 msgid "<strong>Error</strong>: Please complete the reCAPTCHA."
 msgstr "<strong>Fout</strong>: Vul de reCAPTCHA in."
@@ -66,9 +67,10 @@ msgid "Just reCAPTCHA"
 msgstr "Gewoon reCAPTCHA"
 
 #. Description of the plugin/theme
-msgid "Simply add a reCAPTCHA v2 to your WordPress registration form."
+msgid "Simply add a reCAPTCHA v2 or v3 to your WordPress registration form."
 msgstr ""
-"Voeg eenvoudig een reCAPTCHA v2 toe aan uw WordPress-registratieformulier."
+"Voeg eenvoudig een reCAPTCHA v2 of v3 toe aan je WordPress-"
+"registratieformulier."
 
 #. Author of the plugin/theme
 msgid "Jeffrey van Rossum"
@@ -77,3 +79,6 @@ msgstr ""
 #. Author URI of the plugin/theme
 msgid "https://vanrossum.dev"
 msgstr ""
+
+#~ msgid "<strong>Error</strong>: reCAPTCHA is not submitted."
+#~ msgstr "<strong>Fout</strong>: reCAPTCHA is niet verzonden."
