@@ -53,7 +53,7 @@ class RegistrationForm extends Implementation
         }
 
         if (empty($_POST['recaptcha-response'])) {
-            $errors->add('recaptcha_error', __('<strong>Error</strong>: Please complete the reCAPTCHA.', 'just-recaptcha'));
+            $errors->add('recaptcha_error', __('<strong>Error</strong>: reCAPTCHA is not submitted.', 'just-recaptcha'));
 
             return $errors;
         }
@@ -68,7 +68,7 @@ class RegistrationForm extends Implementation
         $body = wp_remote_retrieve_body($response);
         $result = json_decode($body, true);
 
-        if (! $result['success'] || $result['score'] < 0.5) {  // you can adjust the score as per your need
+        if (! $result['success'] || $result['score'] < 0.5) {  // TODO: allow to adjust the score as per your need
             $errors->add('recaptcha_error', __('<strong>Error</strong>: Failed reCAPTCHA verification.', 'just-recaptcha'));
         }
 

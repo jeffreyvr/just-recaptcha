@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Just reCAPTCHA\n"
-"POT-Creation-Date: 2023-09-30 14:20+0200\n"
-"PO-Revision-Date: 2023-09-30 14:21+0200\n"
+"POT-Creation-Date: 2023-09-30 14:38+0200\n"
+"PO-Revision-Date: 2023-09-30 14:41+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -49,6 +49,10 @@ msgstr "Site geheime sleutel"
 msgid "<strong>Error</strong>: reCAPTCHA is not configured correctly."
 msgstr "<strong>Fout</strong>: reCAPTCHA is niet correct geconfigureerd."
 
+#: src/Implementations/V3/RegistrationForm.php:56
+msgid "<strong>Error</strong>: reCAPTCHA is not submitted."
+msgstr "<strong>Fout</strong>: reCAPTCHA is niet verzonden."
+
 #: src/Implementations/V2/RegistrationForm.php:45
 msgid "<strong>Error</strong>: Please complete the reCAPTCHA."
 msgstr "<strong>Fout</strong>: Vul de reCAPTCHA in."
@@ -59,7 +63,7 @@ msgstr "<strong>Fout</strong>: ReCAPTCHA-verificatie is mislukt."
 
 #. Plugin Name of the plugin/theme
 msgid "Just reCAPTCHA"
-msgstr ""
+msgstr "Gewoon reCAPTCHA"
 
 #. Description of the plugin/theme
 msgid "Simply add a reCAPTCHA v2 to your WordPress registration form."

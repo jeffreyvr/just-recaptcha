@@ -6,8 +6,6 @@ class JustRecaptcha
 {
     private static $instance;
 
-    private $settings;
-
     public static function instance(): self
     {
         if (! isset(self::$instance) && ! (self::$instance instanceof JustRecaptcha)) {
@@ -19,7 +17,7 @@ class JustRecaptcha
 
     public function __construct()
     {
-        $this->settings = new Admin\Options();
+        new Admin\Options();
 
         add_action('init', [$this, 'loadCaptcha'], 10);
         add_action('plugins_loaded', [$this, 'loadTextdomain']);
