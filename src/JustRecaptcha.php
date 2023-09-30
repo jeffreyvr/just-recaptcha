@@ -2,11 +2,11 @@
 
 namespace Jeffreyvr\JustRecaptcha;
 
-use Jeffreyvr\JustRecaptcha\RegistrationForm;
-
 class JustRecaptcha
 {
     private static $instance;
+
+    private $settings;
 
     public static function instance(): self
     {
@@ -19,10 +19,29 @@ class JustRecaptcha
 
     public function __construct()
     {
-        new RegistrationForm();
-        new Admin\Options();
+        $this->settings = new Admin\Options();
 
+        add_action('init', [$this, 'loadCaptcha'], 10);
         add_action('plugins_loaded', [$this, 'loadTextdomain']);
+    }
+
+    public function loadCaptcha()
+    {
+        if (! isset($_REQUEST['action'])) {
+            return;
+        }
+
+        if ($_REQUEST['action'] !== 'register') {
+            return;
+        }
+
+        $version = Admin\Options::get('version');
+
+        if ($version === 'v2') {
+            new Implementations\V2\RegistrationForm;
+        } elseif ($version === 'v3') {
+            new Implementations\V3\RegistrationForm;
+        }
     }
 
     public function loadTextdomain(): void

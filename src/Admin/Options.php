@@ -20,22 +20,49 @@ class Options
 
     public function register()
     {
-        $settings = new WPSettings(__('Just reCAPTCHA', 'just-recaptcha'));
+        $settings = (new WPSettings('reCAPTCHA', 'just-recaptcha'))
+            ->set_option_name('just_recaptcha');
 
         $settings->set_menu_parent_slug('options-general.php');
 
         $tab = $settings->add_tab(__('General', 'just-recaptcha'));
 
-        $section = $tab->add_section('Keys');
+        $section = $tab->add_section(__('Version', 'just-recaptcha'))
+            ->add_option('select', [
+                'name' => 'version',
+                'label' => __('Version', 'just-recaptcha'),
+                'description' => __('Select the version of reCAPTCHA you want to use.', 'just-recaptcha'),
+                'options' => [
+                    '' => __('Choose a version', 'just-recaptcha'),
+                    'v2' => 'V2',
+                    'v3' => 'V3',
+                ],
+            ]);
+
+        $section = $tab->add_section('V2')
+            ->option_level();
 
         $section->add_option('text', [
             'name' => 'site_key',
-            'label' => __('Site key', 'just-recaptcha')
+            'label' => __('Site key', 'just-recaptcha'),
         ]);
 
         $section->add_option('text', [
             'name' => 'site_secret',
-            'label' => __('Site Secret', 'just-recaptcha')
+            'label' => __('Site Secret', 'just-recaptcha'),
+        ]);
+
+        $section = $tab->add_section('V3')
+            ->option_level();
+
+        $section->add_option('text', [
+            'name' => 'site_key',
+            'label' => __('Site key', 'just-recaptcha'),
+        ]);
+
+        $section->add_option('text', [
+            'name' => 'site_secret',
+            'label' => __('Site Secret', 'just-recaptcha'),
         ]);
 
         $settings->make();

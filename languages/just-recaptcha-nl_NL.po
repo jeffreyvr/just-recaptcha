@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Just reCAPTCHA\n"
+"POT-Creation-Date: 2023-09-30 14:20+0200\n"
+"PO-Revision-Date: 2023-09-30 14:21+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: just-recaptcha.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: src/Admin/Options.php:28
+msgid "General"
+msgstr "Algemeen"
+
+#: src/Admin/Options.php:30 src/Admin/Options.php:33
+msgid "Version"
+msgstr "Versie"
+
+#: src/Admin/Options.php:34
+msgid "Select the version of reCAPTCHA you want to use."
+msgstr "Selecteer de versie van reCAPTCHA die u wilt gebruiken."
+
+#: src/Admin/Options.php:36
+msgid "Choose a version"
+msgstr "Kies een versie"
+
+#: src/Admin/Options.php:47 src/Admin/Options.php:60
+msgid "Site key"
+msgstr "Sitesleutel"
+
+#: src/Admin/Options.php:52 src/Admin/Options.php:65
+msgid "Site Secret"
+msgstr "Site geheime sleutel"
+
+#: src/Implementations/V2/RegistrationForm.php:39
+msgid "<strong>Error</strong>: reCAPTCHA is not configured correctly."
+msgstr "<strong>Fout</strong>: reCAPTCHA is niet correct geconfigureerd."
+
+#: src/Implementations/V2/RegistrationForm.php:45
+msgid "<strong>Error</strong>: Please complete the reCAPTCHA."
+msgstr "<strong>Fout</strong>: Vul de reCAPTCHA in."
+
+#: src/Implementations/V2/RegistrationForm.php:60
+msgid "<strong>Error</strong>: Failed reCAPTCHA verification."
+msgstr "<strong>Fout</strong>: ReCAPTCHA-verificatie is mislukt."
+
+#. Plugin Name of the plugin/theme
+msgid "Just reCAPTCHA"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Simply add a reCAPTCHA v2 to your WordPress registration form."
+msgstr ""
+"Voeg eenvoudig een reCAPTCHA v2 toe aan uw WordPress-registratieformulier."
+
+#. Author of the plugin/theme
+msgid "Jeffrey van Rossum"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://vanrossum.dev"
+msgstr ""

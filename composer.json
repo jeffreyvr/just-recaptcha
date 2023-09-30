@@ -13,7 +13,7 @@
     "require": {
         "php": "^8.0",
         "automattic/jetpack-autoloader": "^2.10",
-        "jeffreyvanrossum/wp-settings": "^1.0"
+        "jeffreyvanrossum/wp-settings": "^1.2"
     },
     "autoload": {
         "psr-4": {

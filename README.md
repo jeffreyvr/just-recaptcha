@@ -1,6 +1,6 @@
 # Just Recaptcha
 
-Simply add a reCAPTCHA v2 to your WordPress registration form.
+Simply add a reCAPTCHA v2 or v3 to your WordPress registration form.
 
 ## Changelog
 

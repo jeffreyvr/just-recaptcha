@@ -7,11 +7,11 @@ Tested up to: 6.3
 Stable Tag: 0.1.0
 License: MIT
 
-Simply add a reCAPTCHA v2 to your WordPress registration form.
+Simply add a reCAPTCHA v2 or v3 to your WordPress registration form.
 
 == Description ==
 
-Simply add a reCAPTCHA v2 to your WordPress registration form.
+Simply add a reCAPTCHA v2 or v3 to your WordPress registration form.
 
 == Installation ==
 
